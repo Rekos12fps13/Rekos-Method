@@ -1,0 +1,1 @@
+(()=>{if(top!==self)return;setTimeout(()=>{if(!location.hostname.includes("tiktok.com"))return;let p=document.createElement("div");p.id="rekos-panel";p.innerHTML="<b>Rekos Uploader</b><button>×</button><p>Use the extension popup to inspect and preview HD/4K files before uploading.</p>";document.body.append(p);p.querySelector("button").onclick=()=>p.remove()},1800)})();

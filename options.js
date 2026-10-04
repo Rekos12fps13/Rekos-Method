@@ -1,0 +1,1 @@
+const c=document.querySelector("#panel");chrome.storage.sync.get({panel:true},x=>c.checked=x.panel);c.onchange=()=>chrome.storage.sync.set({panel:c.checked});
