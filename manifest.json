@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Rekos Uploader",
+  "version": "1.0.0",
+  "description": "Local TikTok video optimizer targeting 2160p/120fps and a maximum output size of 150 MB.",
+  "action": {
+    "default_title": "Rekos Uploader",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "downloads"],
+  "host_permissions": ["https://cdn.jsdelivr.net/*"],
+  "sandbox": {
+    "pages": ["sandbox/ffmpeg.html"],
+    "content_security_policy": "sandbox allow-scripts; script-src 'self' https://cdn.jsdelivr.net; worker-src blob:; connect-src https://cdn.jsdelivr.net https://raw.githubusercontent.com blob: data:;"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
